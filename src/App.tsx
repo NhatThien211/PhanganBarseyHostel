@@ -148,7 +148,7 @@ const App: React.FC = () => {
                   <div className="absolute inset-0 bg-black/40" />
 
                   <div className="absolute left-6 bottom-6 text-white">
-                    <p className="text-sm mb-1">{t.price}</p>
+                    {/* <p className="text-sm mb-1">{t.price}</p> */}
                     <h3 className="text-2xl font-semibold">{t.name}</h3>
                   </div>
 
@@ -184,7 +184,7 @@ const App: React.FC = () => {
                     className="absolute bottom-2 right-2 bg-white text-black text-sm font-semibold px-3 py-2 rounded-[16px] cursor-pointer"
                     onClick={handleShowMoreImg}
                   >
-                    + view more photos
+                    <span className='md:hidden'>+photos</span> <span className='hidden md:block'>+ view more photos</span>
                   </button>
                 )}
             </div>

@@ -9,7 +9,7 @@
     "image": "main_image.jpg",
     "social": {
       "facebook": "#",
-      "instagram": "#"
+      "instagram": "https://www.instagram.com/phanganbarsay/"
     },
     "aboutHotel": {
       "header": "A lively blend of cultures, smiles, and comfort ",
@@ -55,7 +55,7 @@
         "image": "shared_room.jpg"
       },
       {
-        "name": "Couple Private Room",
+        "name": "Private Room",
         "price": "From 500bath/night",
         "image": "private_room.jpg"
       }

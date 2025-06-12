@@ -1,0 +1,103 @@
+{
+  "hotel": {
+    "name": "Phangan Barsay Hostel",
+    "address": "Soi Wat Thong Sala Ngarm, Ko Pha-ngan, Ko Pha-ngan District, Surat Thani 84280",
+    "phone": "+66 0898675282",
+    "bookingUrl": "https://www.booking.com/hotel/th/phangan-barsay-hostel.html",
+    "logo": "Phangan Barsay",
+    "description": "– where joy, friendship, and cozy stays meet in the heart of Ko Pha Ngan.",
+    "image": "main_image.jpg",
+    "social": {
+      "facebook": "#",
+      "instagram": "#"
+    },
+    "aboutHotel": {
+      "header": "A lively blend of cultures, smiles, and comfort ",
+      "description": "Barsay Hostel is a joyful haven for travelers seeking comfort, connection, and culture. Nestled in a great location, it offers cozy rooms, a vibrant mix of international guests, and a warm atmosphere where friendships are made over stories, laughter, and shared adventures. Whether you're exploring the city or relaxing in the lounge, Barsay feels like home—only happier",
+      "images": [
+        "about_hotel_1.jpg",
+        "about_hotel_2.jpg",
+        "about_hotel_3.jpg",
+        "about_image_4.jpg"
+      ]
+    },
+    "facilities": [
+      {
+        "name": "Free WiFi",
+        "description": "High-speed internet access throughout the property",
+        "icon": "wifi"
+      },
+      {
+        "name": "Free Breakfast",
+        "description": "Free self-serve breakfast every day",
+        "icon": "breakfast"
+      },
+      {
+        "name": "Free Yoga",
+        "description": "Yoga class at 9am",
+        "icon": "yoga"
+      },
+      {
+        "name": "Free Dancing Class",
+        "description": "Let dance and have fun together",
+        "icon": "dancing"
+      },
+      {
+        "name": "Social Dinner",
+        "description": "Let join into our social dinner every wednesday",
+        "icon": "dinner"
+      }
+    ],
+    "room": [
+      {
+        "name": "Shared Dorm",
+        "price": "From 200bath/night",
+        "image": "shared_room.jpg"
+      },
+      {
+        "name": "Couple Private Room",
+        "price": "From 500bath/night",
+        "image": "private_room.jpg"
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Sarah M.",
+        "rating": 5,
+        "comment": "Felt like home! The staff treated us like family and the location was perfect."
+      },
+      {
+        "author": "James L.",
+        "rating": 4,
+        "comment": "Great value for money. The friendly atmosphere made our stay special."
+      },
+      {
+        "author": "Emma K.",
+        "rating": 5,
+        "comment": "We loved the family-like environment. Will definitely return!"
+      }
+    ],
+    "services": [
+      {
+        "name": "Island Tours",
+        "description": "Book guided tours to nearby islands",
+        "price": "From $50"
+      },
+      {
+        "name": "Ferry Tickets",
+        "description": "Convenient ferry ticket booking service",
+        "price": "Various options"
+      },
+      {
+        "name": "Airport Transfers",
+        "description": "Comfortable private transfers to/from airport",
+        "price": "From $30"
+      },
+      {
+        "name": "City Bus Passes",
+        "description": "Unlimited travel passes for local buses",
+        "price": "From $15/day"
+      }
+    ]
+  }
+}

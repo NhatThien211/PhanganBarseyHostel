@@ -1,16 +1,15 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // src/App.tsx
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SectionTitle from './components/SectionTitle';
 import FacilityCard from './components/FacilityCard';
 import ReviewCard from './components/ReviewCard';
 import ServiceCard from './components/ServiceCard';
-import pageData from './data/data.json';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { imageUrls } from './util/loadImage';
 import ImageGalleryModal from './components/ImageGalleryModal'
+import { getAPI } from './service/apiService';
 
 interface HotelData {
   name: string;
@@ -37,11 +36,29 @@ interface HotelData {
 }
 
 const App: React.FC = () => {
-  const [hotelData, setHotelData] = useState<HotelData>(pageData.hotel);
+  const [hotelData, setHotelData] = useState<HotelData>();
   const [showAllImg, setShowAllImg] = useState(false);
+  const [imageUrls, setImageUrls] = useState<string[]>([]);
+
+  const getHotelDetail = async () => {
+    try {
+      const response = await getAPI(`/hotel`);
+      setHotelData(response);
+      setImageUrls(response?.imageUrls)
+      console.log({ ...response })
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+  useEffect(() => {
+    getHotelDetail();
+  }, [])
+
   if (!hotelData) {
     return <div className="flex justify-center items-center h-screen">Loading...</div>;
   }
+
 
   const handleShowMoreImg = () => {
     setShowAllImg(!showAllImg); // Show all items when the button is clicked
